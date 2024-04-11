@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin Penal</title>
+</head>
+
+<body>
+    <div class="Admin-penal">
+        <div class="overlay"></div>
+        <div class="admin-panal-wrapper">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="logo-wrapper">
+                    <img src="./images/sidebar-logo.png" class="sidebar-logo" alt="">
+                </div>
+                <div class="menus-list">
+                    <ul class="accordian-menu" id="accordionMenu">
+                        <li class="active"><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon"
+                                    width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_20296)">
+                                        <path
+                                            d="M23.7238 15.0444H15.0631V4.21857H23.7238V15.0444ZM23.7238 23.705H15.0631V17.2095H23.7238V23.705ZM12.898 23.705H4.23733V12.8792H12.898V23.705ZM12.898 4.21857V10.7141H4.23733V4.21857H12.898Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_20296">
+                                            <rect width="25.9819" height="25.9819" fill="white"
+                                                transform="matrix(-1 0 0 1 26.9715 0.970825)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Dashboard</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_19425" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2"
+                                        y="0" width="25" height="25">
+                                        <rect width="23.9833" height="23.9833"
+                                            transform="matrix(-1 0 0 1 26.9715 0.655518)" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_19425)">
+                                        <path
+                                            d="M13.9806 24.4724C16.8855 22.0005 19.0552 19.7045 20.4896 17.5844C21.924 15.4644 22.6412 13.5022 22.6412 11.6979C22.6412 8.99145 21.7706 6.83531 20.0295 5.22948C18.2883 3.62365 16.272 2.82074 13.9806 2.82074C11.6891 2.82074 9.67279 3.62365 7.93163 5.22948C6.19048 6.83531 5.31991 8.99145 5.31991 11.6979L3.04649 9.42448L1.53087 10.9401L6.40249 15.8117L11.2741 10.9401L9.75849 9.42448L7.48507 11.6979C7.48507 9.73122 8.11207 8.12088 9.36605 6.86689C10.62 5.6129 12.1582 4.9859 13.9806 4.9859C15.8029 4.9859 17.3411 5.6129 18.5951 6.86689C19.849 8.12088 20.476 9.73122 20.476 11.6979C20.476 12.979 19.9438 14.445 18.8792 16.0959C17.8147 17.7468 16.1818 19.5827 13.9806 21.6035C13.6197 21.2787 13.2859 20.963 12.9792 20.6563L12.059 19.7361C12.1492 19.5556 12.2214 19.3617 12.2755 19.1542C12.3296 18.9467 12.3567 18.7347 12.3567 18.5182C12.3567 17.7604 12.0951 17.1198 11.5718 16.5966C11.0486 16.0733 10.408 15.8117 9.65023 15.8117C8.89243 15.8117 8.2519 16.0733 7.72865 16.5966C7.2054 17.1198 6.94378 17.7604 6.94378 18.5182C6.94378 19.276 7.2054 19.9165 7.72865 20.4397C8.2519 20.963 8.89243 21.2246 9.65023 21.2246C9.79458 21.2246 9.92539 21.2156 10.0427 21.1976C10.1599 21.1795 10.2817 21.1524 10.408 21.1164C10.9313 21.6576 11.4861 22.208 12.0725 22.7673C12.6589 23.3266 13.2949 23.895 13.9806 24.4724Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                Master</a>
+                            <ul class="accordion-child-menu accordian-menu">
+                                <li><a href="javaScript:void(0);" class="menu-item child-menu">General <img
+                                            src="./images/rightarrow.png" class="right-arrow" alt=""></a></li>
+                                <li><a href="javaScript:void(0);" class="menu-item child-menu">Vehical <img
+                                            src="./images/rightarrow.png" class="right-arrow" alt=""></a>
+                                    <!-- <ul class="accordion-child-inner-menu accordian-menu">
+                                            <li><a href="javaScript:void(0)" class="menu-item child-inner-menu">Transporter</a></li>
+                                            <li><a href="javaScript:void(0)" class="menu-item child-inner-menu">Vehical</a></li>
+                                            <li><a href="javaScript:void(0)" class="menu-item child-inner-menu">Transporter Contract</a></li>
+                                            <li><a href="javaScript:void(0)" class="menu-item child-inner-menu">Gate Pass Purpose</a></li>
+                                        </ul> -->
+                                </li>
+                                <li><a href="javaScript:void(0);" class="menu-item child-menu">Health <img
+                                            src="./images/rightarrow.png" class="right-arrow" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_19425" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2"
+                                        y="0" width="25" height="25">
+                                        <rect width="23.9833" height="23.9833"
+                                            transform="matrix(-1 0 0 1 26.9715 0.655518)" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_19425)">
+                                        <path
+                                            d="M13.9806 24.4724C16.8855 22.0005 19.0552 19.7045 20.4896 17.5844C21.924 15.4644 22.6412 13.5022 22.6412 11.6979C22.6412 8.99145 21.7706 6.83531 20.0295 5.22948C18.2883 3.62365 16.272 2.82074 13.9806 2.82074C11.6891 2.82074 9.67279 3.62365 7.93163 5.22948C6.19048 6.83531 5.31991 8.99145 5.31991 11.6979L3.04649 9.42448L1.53087 10.9401L6.40249 15.8117L11.2741 10.9401L9.75849 9.42448L7.48507 11.6979C7.48507 9.73122 8.11207 8.12088 9.36605 6.86689C10.62 5.6129 12.1582 4.9859 13.9806 4.9859C15.8029 4.9859 17.3411 5.6129 18.5951 6.86689C19.849 8.12088 20.476 9.73122 20.476 11.6979C20.476 12.979 19.9438 14.445 18.8792 16.0959C17.8147 17.7468 16.1818 19.5827 13.9806 21.6035C13.6197 21.2787 13.2859 20.963 12.9792 20.6563L12.059 19.7361C12.1492 19.5556 12.2214 19.3617 12.2755 19.1542C12.3296 18.9467 12.3567 18.7347 12.3567 18.5182C12.3567 17.7604 12.0951 17.1198 11.5718 16.5966C11.0486 16.0733 10.408 15.8117 9.65023 15.8117C8.89243 15.8117 8.2519 16.0733 7.72865 16.5966C7.2054 17.1198 6.94378 17.7604 6.94378 18.5182C6.94378 19.276 7.2054 19.9165 7.72865 20.4397C8.2519 20.963 8.89243 21.2246 9.65023 21.2246C9.79458 21.2246 9.92539 21.2156 10.0427 21.1976C10.1599 21.1795 10.2817 21.1524 10.408 21.1164C10.9313 21.6576 11.4861 22.208 12.0725 22.7673C12.6589 23.3266 13.2949 23.895 13.9806 24.4724Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                Route Managment</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_20199)">
+                                        <path
+                                            d="M16.299 15.2999L13.9806 13.5411L11.6722 15.2999L12.5516 12.4519L10.2332 10.6132H13.0712L13.9806 7.80513L14.8899 10.6132H17.728L15.4196 12.4519L16.299 15.2999ZM5.98612 11.6125C5.98612 7.19556 9.56363 3.61804 13.9806 3.61804C18.3975 3.61804 21.975 7.19556 21.975 11.6125C21.975 13.6411 21.2155 15.4798 19.9764 16.8888V24.6035L13.9806 22.6048L7.98473 24.6035V16.8888C6.74559 15.4798 5.98612 13.6411 5.98612 11.6125ZM13.9806 5.61665C10.6729 5.61665 7.98473 8.30479 7.98473 11.6125C7.98473 14.9202 10.6729 17.6083 13.9806 17.6083C17.2883 17.6083 19.9764 14.9202 19.9764 11.6125C19.9764 8.30479 17.2883 5.61665 13.9806 5.61665Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_20199">
+                                            <rect width="23.9833" height="23.9833" fill="white"
+                                                transform="matrix(-1 0 0 1 25.9722 1.61945)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Digital Pavti</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_20174)">
+                                        <path
+                                            d="M5.31991 2.74994H22.6412C23.7238 2.74994 24.8064 3.72426 24.8064 4.9151V8.17367C24.8064 10.328 24.8064 10.0032 22.6412 10.0032V22.2364C22.6412 23.4272 21.4504 24.4016 20.476 24.4016H7.48507C6.51075 24.4016 5.31991 23.4272 5.31991 22.2364V10.0032C3.15475 10.0032 3.15475 9.78672 3.15475 8.17367V4.9151C3.15475 3.72426 4.23733 2.74994 5.31991 2.74994ZM10.7328 15.7409H17.2283V13.5757H10.7328V15.7409ZM5.31991 8.16284H22.6412V4.9151L5.31991 4.89345V8.16284Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_20174">
+                                            <rect width="25.9819" height="25.9819" fill="white"
+                                                transform="matrix(-1 0 0 1 26.9715 0.584717)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Inventory</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_19985" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="27" height="27">
+                                        <rect width="25.9819" height="25.9819"
+                                            transform="matrix(-1 0 0 1 26.9715 0.549316)" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_19985)">
+                                        <path
+                                            d="M19.3935 24.3662V18.9533H24.8064V14.4425H17.7155L15.8209 17.2753C15.7428 17.3955 15.6405 17.4948 15.5142 17.573C15.3879 17.6511 15.2476 17.6902 15.0933 17.6902C14.8928 17.6902 14.7111 17.6301 14.5482 17.5098C14.3854 17.3895 14.2743 17.2392 14.2151 17.0587L12.6273 12.3134L11.4906 14.0275C11.3944 14.1478 11.2831 14.247 11.1568 14.3252C11.0305 14.4034 10.8892 14.4425 10.7328 14.4425H3.15474V18.9533H8.56765V24.3662H19.3935ZM15.3338 14.7673L16.4795 13.0351C16.5551 12.9175 16.661 12.822 16.7972 12.7485C16.9333 12.675 17.077 12.6382 17.2283 12.6382H24.8064V8.12744H19.3935V2.71454H8.56765V8.12744H3.15474V12.6382H10.2547L12.1492 9.80544C12.2394 9.68515 12.3477 9.58592 12.474 9.50774C12.6003 9.42955 12.7398 9.39046 12.8927 9.39046C13.0914 9.39046 13.271 9.4506 13.4316 9.57088C13.5921 9.69117 13.7029 9.84153 13.764 10.022L15.3338 14.7673Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                Health Schedule</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_19916" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="27" height="27">
+                                        <rect width="25.9819" height="25.9819"
+                                            transform="matrix(-1 0 0 1 26.9715 0.513916)" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_19916)">
+                                        <path
+                                            d="M18.3109 20.0004H9.65023V17.8353H18.3109V20.0004ZM18.3109 15.6701H9.65023V13.5049H18.3109V15.6701ZM20.476 24.3308C21.0715 24.3308 21.5812 24.1188 22.0052 23.6947C22.4292 23.2707 22.6412 22.761 22.6412 22.1656V4.8443C22.6412 4.24888 22.4292 3.73917 22.0052 3.31515C21.5812 2.89114 21.0715 2.67914 20.476 2.67914H11.8154L5.31991 9.17462V22.1656C5.31991 22.761 5.53192 23.2707 5.95593 23.6947C6.37994 24.1188 6.88965 24.3308 7.48507 24.3308H20.476ZM12.898 10.2572H7.48507L12.898 4.8443V10.2572Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                Reports</a></li>
+                        <li><a href="javaScript:void(0);" class="menu-item"><svg class="menu-icon" width="27"
+                                    height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_20035)">
+                                        <path
+                                            d="M6.25095 14.4871C6.20765 14.1623 6.18599 13.8268 6.18599 13.4695C6.18599 13.1231 6.20765 12.7766 6.26178 12.4519L4.06414 10.7414C3.86927 10.5898 3.81514 10.2975 3.93423 10.081L6.01278 6.48685C6.14269 6.24868 6.41334 6.1729 6.6515 6.24868L9.23888 7.28796C9.78017 6.87658 10.3539 6.53015 10.9927 6.27034L11.3824 3.52058C11.4257 3.26076 11.6422 3.07672 11.902 3.07672H16.0591C16.319 3.07672 16.5246 3.26076 16.5679 3.52058L16.9577 6.27034C17.5964 6.53015 18.181 6.88741 18.7115 7.28796L21.2988 6.24868C21.537 6.16208 21.8076 6.24868 21.9376 6.48685L24.0053 10.081C24.1352 10.3084 24.0919 10.5898 23.8754 10.7414L21.6777 12.4519C21.7319 12.7766 21.7752 13.1339 21.7752 13.4695C21.7752 13.8051 21.7535 14.1623 21.6994 14.4871L23.897 16.1976C24.0919 16.3492 24.146 16.6415 24.0269 16.858L21.9484 20.4521C21.8185 20.6903 21.5478 20.7661 21.3097 20.6903L18.7223 19.651C18.181 20.0624 17.6072 20.4088 16.9685 20.6687L16.5788 23.4184C16.5246 23.6782 16.319 23.8623 16.0591 23.8623H11.902C11.6422 23.8623 11.4257 23.6782 11.3932 23.4184L11.0035 20.6687C10.3648 20.4088 9.78016 20.0624 9.2497 19.651L6.66233 20.6903C6.42416 20.7769 6.15352 20.6903 6.02361 20.4521L3.94505 16.858C3.81514 16.6198 3.86927 16.3492 4.07496 16.1976L6.25095 14.4871ZM13.9806 17.3668C16.1241 17.3668 17.8779 15.613 17.8779 13.4695C17.8779 11.326 16.1241 9.57221 13.9806 9.57221C11.8371 9.57221 10.0833 11.326 10.0833 13.4695C10.0833 15.613 11.8371 17.3668 13.9806 17.3668Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_20035">
+                                            <rect width="25.9819" height="25.9819" fill="white"
+                                                transform="matrix(-1 0 0 1 26.9715 0.478516)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper">
+                    <img src="./images/footer-logo.png" class="footer-logo" alt="">
+                </div>
+                <div class="close-menu-wrapper">
+                    <a href="javaScript:void(0);" id="closeMenu"><img src="./images/close.png" class="close-menu" alt=""></a>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="mobile-menu-wrapper">
+                <a href="javaScript:void(0);" id="mobileMenu"><img src="./images/menubar.png" class="mobile-icon" alt=""></a>
+            </div>
+            <!-- main area -->
+            <div class="main-area">
+                <div class="accordion-content" id="accordionContent">
+                    <!-- dashboard -->
+                    <div class="dashboard-content content active">
+                        <div class="top-wrapper">
+                            <div class="title-wrapper">
+                                <h3>Dashboard</h3>
+                            </div>
+                            <div class="info-wrapper">
+                                <form action="">
+                                    <input type="text" placeholder="Organization Name" class="search-filed">
+                                </form>
+                                <span></span>
+                                <a href="javaScript:void(0);"><img src="./images/Header-User.png" class="profile-icon"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="dashboard-wrapper">
+                            <div class="personal-info">
+                                <div class="welcome-text">
+                                    <p>Welcome <span>Ramnikbhai !</span></p>
+                                </div>
+                                <div class="filter-wrapper">
+                                    <form action="">
+                                        <div class="field-wrapper">
+                                            <div class="field-box">
+                                                <label class="label" for="">Center</label>
+                                                <select class="input-field" name="center-name" id="">
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                </select>
+                                            </div>
+                                            <div class="field-box">
+                                                <label class="label" for="">Sociaty</label>
+                                                <select class="input-field" name="sociaty-name" id="">
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                </select>
+                                            </div>
+                                            <div class="field-box">
+                                                <label class="label" for="">Date</label>
+                                                <input class="input-field" type="date" id="date" name="Date">
+                                            </div>
+                                            <div class="field-box">
+                                                <input type="hidden" id="" name="">
+                                                <a href="javaScript:void(0);"><img src="./images/search.png"
+                                                        class="search-icon icon" alt=""></a>
+                                            </div>
+                                            <div class="field-box">
+                                                <input type="hidden" id="" name="Date">
+                                                <a href="javaScript:void(0);"><img src="./images/scanner.png"
+                                                        class="scanner-icon icon" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="upper-info">
+                                <div class="info-box first">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/farmers.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Farmers</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>5000</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box second">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/cow.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Cow</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>7500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">1500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box third">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/buffalo.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Buffalo</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>5500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">1500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box fourth">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/bull.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Bull</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>1500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-teaser">
+                                <div class="tab-menu">
+                                    <ul>
+                                        <li><a href="#" class="active" data-rel="tab-1">
+                                                <svg class="tab-icon" width="22" height="22" viewBox="0 0 22 22"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1.14891" y="0.835217" width="19.9861" height="19.9861"
+                                                        rx="6.49549" fill="" stroke="" stroke-width="0.999306" />
+                                                    <path
+                                                        d="M14.5861 7.87769C14.3278 7.3677 14.0297 6.89745 13.6356 6.46694C13.5727 6.39739 13.4833 6.35766 13.3906 6.35766H12.1686C12.3209 6.34772 13.6224 6.18545 13.5131 4.05608C13.5065 3.93686 13.5661 3.82427 13.6687 3.75803C13.7714 3.69511 13.8972 3.6918 14.0032 3.7481C14.0363 3.76797 14.8146 4.2051 15.0828 5.19196C15.3014 5.98675 15.1325 6.89083 14.5861 7.87769Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M10.2214 6.35766H9.07888C8.98616 6.35766 8.89675 6.3974 8.83382 6.46694C8.43974 6.90076 8.1152 7.38095 7.82709 7.91743C7.2608 6.91401 7.08529 6 7.30717 5.19197C7.57541 4.2051 8.35364 3.76797 8.38676 3.7481C8.49273 3.6918 8.61857 3.69511 8.72123 3.75803C8.82389 3.82427 8.8835 3.93686 8.87688 4.05608C8.76759 6.18876 10.0724 6.34772 10.2214 6.35766Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M19.0435 9.39767C18.4839 10.0401 17.9341 10.5004 17.3612 10.8084C16.9771 11.0171 16.5333 11.1462 16.0432 11.1893L15.3941 11.2422C15.3809 11.2919 15.3643 11.3416 15.3477 11.3913L15.2385 11.7026C14.9835 12.4146 14.7384 13.1001 14.5728 13.7425C13.7979 13.0669 12.5958 12.6497 11.195 12.6497C9.79416 12.6497 8.59204 13.0669 7.81712 13.7425C7.65154 13.1001 7.40648 12.4146 7.15149 11.7026L7.0422 11.3913C7.02565 11.3515 7.01571 11.3118 7.00578 11.272L6.31365 11.2124C5.84009 11.1727 5.39633 11.0469 4.99893 10.8349C4.42271 10.5236 3.87298 10.06 3.31332 9.42085C3.22059 9.31488 3.20404 9.16255 3.27358 9.04002C3.33981 8.9208 3.4789 8.85125 3.61468 8.87444C3.95909 8.93073 4.69427 8.62275 5.57847 8.04984C6.11826 7.70212 6.78059 7.61271 7.35681 7.80809C7.50252 7.85777 7.64823 7.92069 7.79063 7.98361C7.80388 7.96043 7.81381 7.94056 7.82706 7.91738C8.11517 7.3809 8.43971 6.90071 8.83379 6.46689C8.89671 6.39734 8.98613 6.3576 9.07885 6.3576H13.3906C13.4833 6.3576 13.5727 6.39734 13.6356 6.46689C14.0297 6.8974 14.3278 7.36765 14.5861 7.87764C14.596 7.89751 14.6059 7.91738 14.6159 7.93725C14.745 7.87764 14.8742 7.82796 15 7.78491C15.5829 7.58953 16.2485 7.67894 16.7817 8.02666C17.6626 8.59626 18.3944 8.90755 18.7455 8.85125C18.8812 8.83139 19.017 8.89762 19.0866 9.02015C19.1528 9.14268 19.1362 9.2917 19.0435 9.39767Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M11.195 13.3122C9.1517 13.3122 7.55219 14.3288 7.55219 15.6303C7.55219 16.9318 9.1517 17.9484 11.195 17.9484C13.2382 17.9484 14.8377 16.9318 14.8377 15.6303C14.8377 14.3288 13.2382 13.3122 11.195 13.3122ZM9.87032 15.9615H9.208C9.02586 15.9615 8.87683 15.8124 8.87683 15.6303C8.87683 15.4482 9.02586 15.2991 9.208 15.2991H9.87032C10.0525 15.2991 10.2015 15.4482 10.2015 15.6303C10.2015 15.8124 10.0525 15.9615 9.87032 15.9615ZM13.1819 15.9615H12.5196C12.3375 15.9615 12.1885 15.8124 12.1885 15.6303C12.1885 15.4482 12.3375 15.2991 12.5196 15.2991H13.1819C13.3641 15.2991 13.5131 15.4482 13.5131 15.6303C13.5131 15.8124 13.3641 15.9615 13.1819 15.9615Z"
+                                                        fill="white" />
+                                                </svg>
+                                                Breeding</a></li>
+                                        <li><a href="#" data-rel="tab-2" class="">
+                                                <svg class="tab-icon" width="22" height="22" viewBox="0 0 22 22"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_9_1194)">
+                                                        <path
+                                                            d="M14.2666 0.83522H7.27149C3.68413 0.83522 0.776001 3.74335 0.776001 7.33071V14.3258C0.776001 17.9132 3.68413 20.8213 7.27149 20.8213H14.2666C17.854 20.8213 20.7621 17.9132 20.7621 14.3258V7.33071C20.7621 3.74335 17.854 0.83522 14.2666 0.83522Z"
+                                                            fill="white" stroke="white" stroke-width="0.999306" />
+                                                        <mask id="mask0_9_1194" style="mask-type:luminance"
+                                                            maskUnits="userSpaceOnUse" x="2" y="2" width="17"
+                                                            height="17">
+                                                            <path d="M3.35791 3.41711H18.1802V18.2394H3.35791V3.41711Z"
+                                                                fill="white" stroke="white" />
+                                                        </mask>
+                                                        <g mask="url(#mask0_9_1194)">
+                                                            <g filter="url(#filter0_d_9_1194)">
+                                                                <path
+                                                                    d="M12.9062 6.87271V7.37271H13.4062H16.0433C16.4923 7.37271 16.8618 7.74217 16.8618 8.19124V16.1024C16.8618 16.5515 16.4924 16.9209 16.0433 16.9209H5.49504C5.04598 16.9209 4.67651 16.5514 4.67651 16.1024V8.19124C4.67651 7.74219 5.046 7.37271 5.49504 7.37271H8.1321H8.6321V6.87271V5.55418C8.6321 5.10513 9.00158 4.73566 9.45063 4.73566H12.0877C12.5367 4.73566 12.9062 5.10512 12.9062 5.55418V6.87271ZM9.45063 5.05418H8.95063V5.55418V6.87271V7.37271H9.45063H12.0877H12.5877V6.87271V5.55418V5.05418H12.0877H9.45063ZM13.4062 13.3061H13.9062V12.8061V11.4876V10.9876H13.4062H11.9284V9.50977V9.00977H11.4284H10.1099H9.6099V9.50977V10.9876H8.1321H7.6321V11.4876V12.8061V13.3061H8.1321H9.6099V14.7839V15.2839H10.1099H11.4284H11.9284V14.7839V13.3061H13.4062Z"
+                                                                    fill="#464F5C" stroke="#464F5C" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_9_1194" x="4.17651" y="4.23566"
+                                                            width="13.1853" height="13.1852"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                                result="hardAlpha" />
+                                                            <feOffset />
+                                                            <feColorMatrix type="matrix"
+                                                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                                result="effect1_dropShadow_9_1194" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_dropShadow_9_1194" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_9_1194">
+                                                            <rect width="22" height="22" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                Health</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-main-box">
+                                    <div class="tab-box" id="tab-1" style="display:block;">
+                                        <div class="tab-box-wrapper">
+                                            <div class="box">
+                                                <div class="total-percent">
+                                                    <h3>artificial insemination <strong>(92%)</strong></h3>
+                                                </div>
+                                                <div class="more-info">
+                                                    <div class="image-wrapper">
+                                                        <img src="./images/tab1.png" class="tab-icon" alt="">
+                                                    </div>
+                                                    <div class="info-wrapper">
+                                                        <h4>Total: <strong>6000</strong></h4>
+                                                        <h4>Pending: <strong>480</strong></h4>
+                                                        <h4>Cancel: <strong>00</strong></h4>
+                                                        <h4>Completed:: <strong>5590</strong></h4>
+                                                    </div>
+                                                </div>
+                                                <div class="devider-wrapper">
+                                                    <img src="./images/divider.png" class="devider-icon" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="total-percent">
+                                                    <h3>Pregnancy Diagnosis <strong>(80%)</strong></h3>
+                                                </div>
+                                                <div class="more-info">
+                                                    <div class="image-wrapper">
+                                                        <img src="./images/tab2.png" class="tab-icon" alt="">
+                                                    </div>
+                                                    <div class="info-wrapper">
+                                                        <h4>Total: <strong>5520</strong></h4>
+                                                        <h4>Pending: <strong>1000</strong></h4>
+                                                    </div>
+                                                </div>
+                                                <div class="devider-wrapper">
+                                                    <img src="./images/divider.png" class="devider-icon" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="total-percent">
+                                                    <h3>Calving <strong>(50%)</strong></h3>
+                                                </div>
+                                                <div class="more-info">
+                                                    <div class="image-wrapper">
+                                                        <img src="./images/tab3.png" class="tab-icon" alt="">
+                                                    </div>
+                                                    <div class="info-wrapper">
+                                                        <h4>Total: <strong>4416</strong></h4>
+                                                        <h4>Pending: <strong>1500</strong></h4>
+                                                    </div>
+                                                </div>
+                                                <div class="devider-wrapper">
+                                                    <img src="./images/divider.png" class="devider-icon" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="total-percent">
+                                                    <h3>Calf Born <strong>(98%)</strong></h3>
+                                                </div>
+                                                <div class="more-info">
+                                                    <div class="image-wrapper">
+                                                        <img src="./images/tab4.png" class="tab-icon" alt="">
+                                                    </div>
+                                                    <div class="info-wrapper">
+                                                        <h4>Total: <strong>2000</strong></h4>
+                                                        <h4>Alive: <strong>1800</strong></h4>
+                                                        <h4>Dead: <strong>200</strong></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-box" id="tab-2">
+                                        <h2>Health</h2>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                            roots in a piece of classical Latin literature from 45 BC, making it over
+                                            2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                                            College in Virginia, looked up one of the more obscure Latin words,
+                                            consectetur, from a Lorem Ipsum passage, and going through the cites of the
+                                            word in classical literature, discovered the undoubtable source. Lorem Ipsum
+                                            comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                                            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+                                            treatise on the theory of ethics, very popular during the Renaissance. The
+                                            first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
+                                            in section 1.10.32.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-tab-content">
+                            <ul class="accordion-list">
+                                <li>
+                                    <h3>Performance Rate%</h3>
+                                    <div class="answer">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries, but also
+                                            the leap into electronic typesetting, remaining essentially unchanged. It
+                                            was popularised in the 1960s with the release of Letraset sheets containing
+                                            Lorem Ipsum passages, and more recently with desktop publishing software
+                                            like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>Conception Rate</h3>
+                                    <div class="answer">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries, but also
+                                            the leap into electronic typesetting, remaining essentially unchanged. It
+                                            was popularised in the 1960s with the release of Letraset sheets containing
+                                            Lorem Ipsum passages, and more recently with desktop publishing software
+                                            like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>Sexed Semen Straw Analysis</h3>
+                                    <div class="answer">
+                                        <p>This will vary depending on the type of project. For logo & branding
+                                            projects, fees will be one-time costs. For website projects, we will
+                                            typically charge a monthly fee, depending on the level of service you
+                                            choose. To view a full list of our monthly packages, click here.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- master -->
+                    <div class="master-content content">
+                        <div class="top-wrapper">
+                            <div class="title-wrapper">
+                                <h3>Master</h3>
+                            </div>
+                            <div class="info-wrapper">
+                                <form action="">
+                                    <input type="text" placeholder="Organization Name" class="search-filed">
+                                </form>
+                                <span></span>
+                                <a href="javaScript:void(0);"><img src="./images/Header-User.png" class="profile-icon"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="dashboard-wrapper">
+                            <div class="personal-info">
+                                <div class="welcome-text">
+                                    <p>Welcome <span>Ramnikbhai !</span></p>
+                                </div>
+                                <div class="filter-wrapper">
+                                    <form action="">
+                                        <div class="field-wrapper">
+                                            <div class="field-box">
+                                                <label class="label" for="">Center</label>
+                                                <select class="input-field" name="center-name" id="">
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                </select>
+                                            </div>
+                                            <div class="field-box">
+                                                <label class="label" for="">Sociaty</label>
+                                                <select class="input-field" name="sociaty-name" id="">
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                    <option value="">value</option>
+                                                </select>
+                                            </div>
+                                            <div class="field-box">
+                                                <label class="label" for="">Date</label>
+                                                <input class="input-field" type="date" id="date" name="Date">
+                                            </div>
+                                            <div class="field-box">
+                                                <input type="hidden" id="" name="">
+                                                <a href="javaScript:void(0);"><img src="./images/search.png"
+                                                        class="search-icon icon" alt=""></a>
+                                            </div>
+                                            <div class="field-box">
+                                                <input type="hidden" id="" name="Date">
+                                                <a href="javaScript:void(0);"><img src="./images/scanner.png"
+                                                        class="scanner-icon icon" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="upper-info">
+                                <div class="info-box first">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/farmers.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Farmers</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>5000</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box second">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/cow.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Cow</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>7500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">1500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box third">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/buffalo.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Buffalo</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>5500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">1500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box fourth">
+                                    <div class="profile-wrapper">
+                                        <div class="left-side">
+                                            <span class="icon-wrapper"><img src="./images/bull.svg" class="icon"
+                                                    alt=""></span>
+                                            <p class="title">Bull</p>
+                                        </div>
+                                        <div class="upper-wrapper">
+                                            <h3>1500</h3>
+                                            <span><img src="./images/up-arrow.png" alt=""></span>
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-info">
+                                        <div class="bottom-wrapper">
+                                            <span class="key">New:</span>
+                                            <span class="value">100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
